@@ -12,6 +12,11 @@ namespace CarBook.Controllers
         {
             return View();
         }
+        [Route("detail")]
+        public IActionResult Detail()
+        {
+            return View("detail");
+        }
 
     }
 }

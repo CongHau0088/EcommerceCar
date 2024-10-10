@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandmain\\ecommercecar\\ecommercecar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandhau\\ecommercecar\\ecommercecar\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|solutionrelative:ecommercecar\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandhau\\ecommercecar\\ecommercecar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|solutionrelative:ecommercecar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandmain\\ecommercecar\\ecommercecar\\configuration\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandhau\\ecommercecar\\ecommercecar\\configuration\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|solutionrelative:ecommercecar\\configuration\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandmain\\ecommercecar\\ecommercecar\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandhau\\ecommercecar\\ecommercecar\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|solutionrelative:ecommercecar\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandmain\\ecommercecar\\ecommercecar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandhau\\ecommercecar\\ecommercecar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|solutionrelative:ecommercecar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandmain\\ecommercecar\\ecommercecar\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandhau\\ecommercecar\\ecommercecar\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|solutionrelative:ecommercecar\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandmain\\ecommercecar\\ecommercecar\\migrations\\20241010135652_dbinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|c:\\users\\admin\\onedrive\\desktop\\new folder\\projectcarbrandhau\\ecommercecar\\ecommercecar\\migrations\\20241010135652_dbinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09885AAA-4927-467B-ABA8-E55B2F3CF4C7}|EcommerceCar\\EcommerceCar.csproj|solutionrelative:ecommercecar\\migrations\\20241010135652_dbinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,50 +46,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Configuration\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "EcommerceCar\\Configuration\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Configuration\\AutoMapperProfile.cs",
-              "RelativeToolTip": "EcommerceCar\\Configuration\\AutoMapperProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "EcommerceCar\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "EcommerceCar\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T14:06:19.572Z",
+              "WhenOpened": "2024-10-10T14:12:20.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "EcommerceCar\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "EcommerceCar\\Data\\ApplicationDbContext.cs",
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Configuration\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "EcommerceCar\\Configuration\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Configuration\\AutoMapperProfile.cs",
+              "RelativeToolTip": "EcommerceCar\\Configuration\\AutoMapperProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T13:57:54.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T14:06:19.572Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\appsettings.json",
-              "RelativeDocumentMoniker": "EcommerceCar\\appsettings.json",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\appsettings.json",
-              "RelativeToolTip": "EcommerceCar\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-10T13:53:54.154Z",
-              "EditorCaption": ""
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EcommerceCar\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EcommerceCar\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:57:54.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\appsettings.json",
+              "RelativeDocumentMoniker": "EcommerceCar\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\appsettings.json",
+              "RelativeToolTip": "EcommerceCar\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-10T13:53:54.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Program.cs",
               "RelativeDocumentMoniker": "EcommerceCar\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Program.cs",
               "RelativeToolTip": "EcommerceCar\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -94,29 +108,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "20241010135652_DBinitial.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Migrations\\20241010135652_DBinitial.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Migrations\\20241010135652_DBinitial.cs",
               "RelativeDocumentMoniker": "EcommerceCar\\Migrations\\20241010135652_DBinitial.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\Migrations\\20241010135652_DBinitial.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\Migrations\\20241010135652_DBinitial.cs",
               "RelativeToolTip": "EcommerceCar\\Migrations\\20241010135652_DBinitial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T13:56:52.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T13:56:52.901Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\appsettings.Development.json",
               "RelativeDocumentMoniker": "EcommerceCar\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\appsettings.Development.json",
               "RelativeToolTip": "EcommerceCar\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-10T13:53:46.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T13:53:46.192Z"
             }
           ]
         }

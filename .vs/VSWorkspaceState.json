@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EcommerceCar",
+    "\\EcommerceCar\\EcommerceCar"
   ],
+  "SelectedNode": "\\EcommerceCar\\EcommerceCar\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
