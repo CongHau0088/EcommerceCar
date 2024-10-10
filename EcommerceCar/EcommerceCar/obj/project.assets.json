@@ -4656,11 +4656,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\EcommerceCar.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\EcommerceCar.csproj",
       "projectName": "EcommerceCar",
-      "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\EcommerceCar.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\EcommerceCar.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandMain\\EcommerceCar\\EcommerceCar\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\New folder\\ProjectCarBrandHau\\EcommerceCar\\EcommerceCar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

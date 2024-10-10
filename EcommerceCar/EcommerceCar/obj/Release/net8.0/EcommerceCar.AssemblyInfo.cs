@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-EcommerceCar-4947d996-0151-4cd3-bae5-0b15e90caa00")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcommerceCar")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f849e36fe383a7771d8528441c2dee566ae3db05")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcommerceCar")]
