@@ -1,4 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CarBook.Data;
+using CarBook.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CarBook.Areas.Admin.Controllers
 {
@@ -6,29 +16,138 @@ namespace CarBook.Areas.Admin.Controllers
     [Route("admin/product")]
     public class ProductController : Controller
     {
+        private readonly ApplicationDbContext _dbContext;
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public ProductController(ApplicationDbContext dbContext, IWebHostEnvironment webHostEnvironment)
+        {
+            _dbContext = dbContext;
+            _webHostEnvironment = webHostEnvironment;
+        }
+
         [Route("index")]
         [Route("")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            ViewBag.data = await _dbContext.Products.ToListAsync();
             return View();
         }
 
         [Route("add")]
         public IActionResult Add()
         {
-            return View("add");
+            var product = new Product();
+            ViewBag.categories = _dbContext.Categories.ToList();
+            return View("add", product);
         }
 
-        [Route("update/{id}")]
+        [Route("add/save")]
+        [HttpPost]
+        public async Task<IActionResult> Add(Product product, List<IFormFile> images)
+        {
+            foreach (var image in images)
+            {
+                product.Images.Add(new ProductImage() { Id = 0, Path = image.FileName });
+                var path = Path.Combine(_webHostEnvironment.WebRootPath, "images/products", image.FileName);
+                using (var fileStream = new FileStream(path, FileMode.Create))
+                {
+                    await image.CopyToAsync(fileStream);
+                }
+            }
+
+            await _dbContext.Products.AddAsync(product);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction("index", "product");
+        }
+        [HttpGet]
+        [Route("update")]
         public IActionResult Update(int id)
         {
-            return View("update");
+            if (id == 0)
+            {
+                return NotFound();
+            }
+            var product = _dbContext.Products.Include(p => p.Images).FirstOrDefault(p => p.Id == id);
+            ViewBag.categories = _dbContext.Categories.ToList();
+
+            return View(product);
+        }
+        [HttpPost]
+        [Route("update")]
+        public async Task<IActionResult> Update(Product product, List<IFormFile> images, int id)
+        {
+            if (id != product.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var productFromDb = _dbContext.Products.Include(p => p.Images).FirstOrDefault(p => p.Id == id);
+                if (productFromDb == null)
+                {
+                    return NotFound();
+                }
+
+                if (images != null && images.Count > 0)
+                {
+
+                    foreach (var oldImage in productFromDb.Images.ToList())
+                    {
+
+                        _dbContext.ProductImages.Remove(oldImage);
+
+                        var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, "images/products", oldImage.Path);
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+                    foreach (var image in images)
+                    {
+                        var newImagePath = Path.Combine(_webHostEnvironment.WebRootPath, "images/products", image.FileName);
+                        using (var fileStream = new FileStream(newImagePath, FileMode.Create))
+                        {
+                            await image.CopyToAsync(fileStream);
+                        }
+                        productFromDb.Images.Add(new ProductImage() { Path = image.FileName });
+                    }
+                }
+                productFromDb.Name = product.Name;
+                productFromDb.Title = product.Title;
+                productFromDb.Description = product.Description;
+                productFromDb.Price = product.Price;
+                productFromDb.Amount = product.Amount;
+                productFromDb.CategoryId = product.CategoryId;
+                productFromDb.IsActive = product.IsActive;
+                productFromDb.UpdatedAt = DateTime.Now;
+                _dbContext.Products.Update(productFromDb);
+                _dbContext.SaveChanges();
+
+                return RedirectToAction("index");
+            }
+
+            return View(product);
         }
 
-        [Route("delete/{id}")]
-        public IActionResult Delete(int id)
+
+
+    [Route("delete/{id}")]
+        public async Task<IActionResult> Delete(int id)
         {
-            return RedirectToAction("index","product");
+            var product = await _dbContext.Products.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+            product.Images.Clear();
+            _dbContext.Entry(product).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+            _dbContext.Products.Remove(product);
+            await _dbContext.SaveChangesAsync();
+
+            return RedirectToAction("Index");
         }
     }
 }
