@@ -33,28 +33,36 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="table-info">
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        Herman Beck
-                                    </td>
-                                    <td>
-                                        Photoshop
-                                    </td>
-                                    <td>
-                                        $ 77.99
-                                    </td>
-                                    <td>
-                                        May 15, 2015
-                                    </td>
-                                    <td style="text-align:center">
-                                        <a href="/admin/product/delete" asp-route-id="1"><i class="mdi mdi-delete-forever" style="font-size:28px;margin-right: 12px;"></i></a>
+                                @foreach(var i in ViewBag.data)
+                                {
+                                    <tr class="table-info">
+                                        <td>
+                                            @i.Id
+                                        </td>
+                                        <td>
+                                           @i.Name
+                                        </td>
+                                        <td>
+                                            @i.Price
+                                        </td>
+                                        <td>
+                                            @i.Description
+                                        </td>
+                                        <td>
+                                            @foreach(var j in i.Images)
+                                            {
+                                                <img src="/images/products/@j.Path" />
+                                            }
+                                            
+                                        </td>
+                                        <td style="text-align:center">
+                                            <a asp-area="Admin" asp-controller="Product" asp-action="Delete" asp-route-id="@i.Id"><i class="mdi mdi-delete-forever" style="font-size:28px;margin-right: 12px;"></i></a>
 
-                                        <a href="/admin/product/update" asp-route-id="1"><i class="mdi mdi-pencil-box" style="font-size:24px"></i></a>
-                                    </td>
-                                </tr>
+                                            <a asp-area="Admin" asp-controller="Product" asp-action="Update" asp-route-id="@i.Id"><i class="mdi mdi-pencil-box" style="font-size:24px"></i></a>
+                                        </td>
+                                    </tr>
+                                }
+                                
                                 
                             </tbody>
                         </table>
