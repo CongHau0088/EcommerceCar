@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model CarBook.Models.Brand;
+<div class="container">
+    <h3>Xoá hãng xe</h3>
+    <form method="post" asp-action="DeleteConfirm">
+        <input asp-for="Id" type="hidden" />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Name">Tên hãng xe</label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+
+        </div>
+        
+
+        <button type="submit" class="btn btn-primary">Xoá</button>
+        <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+    </form>
+
+
+</div>

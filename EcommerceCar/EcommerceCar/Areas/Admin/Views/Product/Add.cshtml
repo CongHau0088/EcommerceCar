@@ -18,10 +18,10 @@
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
-        <div class="form-group">
+  @*       <div class="form-group">
             <label asp-for="Title">Title</label>
             <input asp-for="Title" class="form-control" />
-        </div>
+        </div> *@
         <div class="form-group">
             <label asp-for="Description">Description</label>
             <textarea asp-for="Description" class="form-control" rows="4"></textarea>
@@ -43,6 +43,18 @@
                     <option value="@i.Id">@i.Name</option>
                 }
             </select>
+            </div>
+        <div class="form-group">
+            <label asp-for="BrandId">Hãng xe</label>
+            <select asp-for="BrandId" class="form-control">
+
+                <option disabled>Chon hãng xe</option>
+                @foreach (var i in ViewBag.Brands)
+                {
+                    <option value="@i.Id">@i.Name</option>
+                }
+            </select>
+        </div>
         <div class="form-group">
             <label asp-for="Images">Images</label>
             <input type="file" name="Images" class="form-control-file" multiple />
@@ -56,7 +68,7 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-@section Scripts {
+@* @section Scripts {
     <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
     <script>
         $(document).ready(function () {
@@ -71,4 +83,4 @@
                 });
         });
     </script>
-}
+} *@

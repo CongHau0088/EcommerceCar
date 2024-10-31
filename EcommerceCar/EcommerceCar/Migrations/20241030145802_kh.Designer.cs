@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EcommerceCar.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241021153832_s")]
-    partial class s
+    [Migration("20241030145802_kh")]
+    partial class kh
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,6 +27,39 @@ namespace EcommerceCar.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("CarBook.Models.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("UpdatedById");
+
+                    b.ToTable("Brands");
+                });
 
             modelBuilder.Entity("CarBook.Models.Category", b =>
                 {
@@ -68,23 +101,6 @@ namespace EcommerceCar.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("CarBook.Models.HangXe", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("HangXe");
-                });
-
             modelBuilder.Entity("CarBook.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -94,6 +110,9 @@ namespace EcommerceCar.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BrandId")
                         .HasColumnType("int");
 
                     b.Property<int>("CategoryId")
@@ -130,6 +149,8 @@ namespace EcommerceCar.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
 
@@ -383,6 +404,21 @@ namespace EcommerceCar.Migrations
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
+            modelBuilder.Entity("CarBook.Models.Brand", b =>
+                {
+                    b.HasOne("CarBook.Models.ApplicationUser", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById");
+
+                    b.HasOne("CarBook.Models.ApplicationUser", "UpdatedBy")
+                        .WithMany()
+                        .HasForeignKey("UpdatedById");
+
+                    b.Navigation("CreatedBy");
+
+                    b.Navigation("UpdatedBy");
+                });
+
             modelBuilder.Entity("CarBook.Models.Category", b =>
                 {
                     b.HasOne("CarBook.Models.ApplicationUser", "CreatedBy")
@@ -400,6 +436,12 @@ namespace EcommerceCar.Migrations
 
             modelBuilder.Entity("CarBook.Models.Product", b =>
                 {
+                    b.HasOne("CarBook.Models.Brand", "Brand")
+                        .WithMany()
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CarBook.Models.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
@@ -413,6 +455,8 @@ namespace EcommerceCar.Migrations
                     b.HasOne("CarBook.Models.ApplicationUser", "UpdatedBy")
                         .WithMany()
                         .HasForeignKey("UpdatedById");
+
+                    b.Navigation("Brand");
 
                     b.Navigation("Category");
 
