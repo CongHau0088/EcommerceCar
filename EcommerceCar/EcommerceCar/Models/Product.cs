@@ -19,6 +19,10 @@ namespace CarBook.Models
         
         public int CategoryId { get; set; }
         public virtual Category? Category { get; set; }
+        [ForeignKey(nameof(Brand))]
+
+        public int BrandId { get; set; }
+        public virtual Brand? Brand { get; set; }
         public virtual ICollection<ProductImage> Images {  get; set; } = new List<ProductImage>();  
         public bool IsActive { get; set; }
     }

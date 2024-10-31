@@ -38,6 +38,7 @@ namespace CarBook.Areas.Admin.Controllers
         {
             var product = new Product();
             ViewBag.categories = _dbContext.Categories.ToList();
+            ViewBag.Brands = _dbContext.Brands.ToList();
             return View("add", product);
         }
 
@@ -62,14 +63,14 @@ namespace CarBook.Areas.Admin.Controllers
         [HttpGet]
         [Route("update")]
         public IActionResult Update(int id)
-        {
+        { 
             if (id == 0)
             {
                 return NotFound();
             }
             var product = _dbContext.Products.Include(p => p.Images).FirstOrDefault(p => p.Id == id);
             ViewBag.categories = _dbContext.Categories.ToList();
-
+            ViewBag.Brands = _dbContext.Brands.ToList();
             return View(product);
         }
         [HttpPost]
@@ -114,12 +115,13 @@ namespace CarBook.Areas.Admin.Controllers
                     }
                 }
                 productFromDb.Name = product.Name;
-                productFromDb.Title = product.Title;
+                //productFromDb.Title = product.Title;
                 productFromDb.Description = product.Description;
                 productFromDb.Price = product.Price;
                 productFromDb.Amount = product.Amount;
                 productFromDb.CategoryId = product.CategoryId;
-                productFromDb.IsActive = product.IsActive;
+                productFromDb.BrandId = product.BrandId;
+                //productFromDb.IsActive = product.IsActive;
                 productFromDb.UpdatedAt = DateTime.Now;
                 _dbContext.Products.Update(productFromDb);
                 _dbContext.SaveChanges();
